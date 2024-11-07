@@ -1,0 +1,231 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animasi Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Memulai sedikit di bawah */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Posisi normal */
+    }
+}
+
+/* Terapkan ke elemen utama */
+.anim {
+    opacity: 0; /* Mulai dari tidak terlihat */
+    animation: fadeIn 1s ease-out forwards; /* 1 detik, tanpa kembali */
+}
+
+
+header{
+    background-color: #ffffff;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logoatas{
+    width: 75px;
+    height: auto;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: ease-out 0.1s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+nav ul li a.active {
+    color: #007bff; /* Warna atau gaya berbeda */
+    font-weight: bold;
+}
+
+
+.buton:hover{
+    color: black;
+    transition: ease-in 0.1s;
+}
+
+.smk{
+    color: black;
+    transition: ease-out 0.1s;
+    text-decoration: none;
+}
+
+.smk:hover{
+    color: #333;
+    transition: ease-in 0.1s;
+}
+
+/*about*/
+.intro-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    padding-top: 100px;
+    gap: 20px; /* Spasi antara gambar dan teks */
+}
+
+.orang{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes pulse{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.org{
+    width: 500px;
+    height: auto;
+    animation: pulse 2s infinite; /* Waktu animasi 2 detik, berulang tanpa henti */
+}
+
+.intro-text{
+    max-width: 800px;
+    font-size: 1.8em;
+    text-align: justify;
+}
+
+/*Skill*/
+
+.skill{
+    display: flex;
+    flex-wrap: warp;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 500px;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.skilltngh{
+    background-color: rgba(0, 0, 0, 0.356);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.skilltngh img{
+    width: auto;
+    height: 180px;
+    object-fit: cover; 
+}
+
+/*sertifikat*/
+.sertif{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Menempatkan elemen di tengah */
+    align-items: center;
+    gap: 20px; /* Jarak antar sertifikat */
+    padding: 20px;
+    padding-top: 350px;
+}
+
+.Sertifikat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px; /* Ukuran sedang */
+    height: auto;
+    padding: 10px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.Sertifikat:hover{
+    transform: scale(1.05);
+}
+
+.Sertifikat img{
+    max-width: 100%; /* Agar gambar tidak melebihi container */
+    height: auto;
+    object-fit: contain;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column; /* Menumpuk logo di atas teks */
+    align-items: center; /* Memusatkan secara horizontal */
+    justify-content: center; /* Memusatkan secara vertikal */
+    padding: 20px;
+    padding-top: 250px;
+    text-align: center; /* Memusatkan teks */
+}
+
+.projek {
+    width: 100px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-bottom: 10px; /* Spasi antara logo dan teks */
+}
+
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    nav ul li{
+        margin: 5px 0;
+    }
+    
+    .intro-section{
+        flex-direction: column; /* Susunan vertikal untuk layar kecil */
+        text-align: center;
+    }
+    
+    .org{
+        width: 250px;
+    }
+}
