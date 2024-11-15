@@ -6,11 +6,12 @@
     <title>Yumsha</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body class="anim">
+<body id="about" class="anim">
     <header>
         <div class="logo-container">
             <img src="logoyumsha.png" class="logoatas" alt="Logo">
         </div>
+        <div class="switch-position">
         <nav>
             <ul>
                 <li><a href="#about" class="buton">About</a></li>
@@ -21,38 +22,47 @@
             </ul>
         </nav>
     </header>
-    
+      
     <main>
         <!-- about -->
-        <div id="about">
+        <div class="about">
             <section class="intro-section">
                 <div class="orang">
                     <img src="personal.png" class="org" alt="Foto Personal">
                 </div>
                 <div class="intro-text">
-                    <p><strong>Hi there!</strong> my name is <strong>Muhamad Riza Pahlevi</strong>. I'm a Junior Web Developer, and I'm still in the 10th Grade at <strong><a class="smk" href="https://smktarunabhakti.net/">SMK TARUNA BHAKTI DEPOK</a></strong>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum animi doloribus, sequi autem labore rem temporibus iusto, nobis hic, perspiciatis et quibusdam minima ipsam praesentium. Repellendus non maxime architecto voluptatem?</p>
+                    <p class="HelloSign">Hello there! I'am <strong>Muhamad Riza Pahlevi</strong></p>
+                    <p>a passionate Junior Web Developer from <strong><a class="smk" href="https://smktarunabhakti.net/">SMK TARUNA BHAKTI.</a></strong>  I started my coding journey in 8th grade, and ever since, I’ve been dedicated to bringing ideas to life on the web. Let’s create something amazing together!"</p>
                 </div>
             </section>
         </div>
 
         <!-- Skills -->
-        <div class="skill" id="skills">
+        <div class="column">
+        <section class="DescriptionText"  id="skills"><p>Skills</p></section>
+        <div class="skill">
                 <div class="skilltngh">
-                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png">
+                   <img src="https://imgur.com/4JS5RTW.png" alt="HTML">
                 </div>
                 <div class="skilltngh">
-                   <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg">
+                   <img src="https://imgur.com/eQZPquV.png" alt="CSS">
                 </div>
                 <div class="skilltngh">
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf-DW_HRN0h9p0HU7tkiKE4PiuryqmVH6X9w&s">
+                   <img src="https://imgur.com/XzzSNf0.png" alt="Javascript">
                 </div>
                 <div class="skilltngh">
-                   <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png">
+                   <img src="https://imgur.com/XATfBK8.png" alt="DART">
                 </div>
+                <div class="skilltngh">
+                    <img src="https://imgur.com/93SmEks.png" alt="Flutter">
+                </div>
+         </div>
          </div>
 
          <!-- Sertif -->
-          <div id="sertif" class="sertif">
+        <div class="column">
+         <section id="sertif" class="DescriptionText"><p>Certificate</p></section>
+          <div class="sertif">
             <div class="Sertifikat">
                 <img src="https://imgur.com/m5ZYPT5.png" alt="Pemrograman Web Dasar">
             </div>
@@ -60,14 +70,44 @@
                 <img src="https://imgur.com/9Va0FVk.png" alt="Javascript Dasar">
             </div>
           </div>
+        </div>
 
         <!-- Projek -->
-            <div id="projects">
-                <a href="https://github.com/yumsha"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="projek" alt="Github Logo"></a>
-                <p>All Projects will be available on Github!</p>
+        <div class="column">
+        <section id="projects" class="DescriptionText"><p>Projects</p></section>
+        <div class="sertif">
+            <div class="Sertifikat">
+                <img src="https://imgur.com/m5ZYPT5.png" alt="Pemrograman Web Dasar">
             </div>
+            <div class="Sertifikat">
+                <img src="https://imgur.com/9Va0FVk.png" alt="Javascript Dasar">
+            </div>
+        </div>
+        <div id="projects">
+            <a href="https://github.com/yumsha"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="projek" alt="Github Logo"></a>
+            <p class="text-project">All Projects will be available on Github!</p>
+        </div>
+        </div>
+
+        <!-- Comment -->
+
 
     </main>
+    <footer>
+        <div class="footerkiri">
+            <div>
+                <a href=""></a>
+                <br>
+            </div>
+        </div>
+        <div class="footerkanan">
+            <div>
+                <a href=""></a>
+                <br>
+            </div>
+        </div>
+    </footer>
+    
 
     <script src="script.js"></script>
 </body>
